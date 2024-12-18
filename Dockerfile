@@ -1,8 +1,8 @@
 FROM node:16
-MAINTAINER veera "veera.narni232@gmail.com"
+MAINTAINER raj "rajukolupula2000@gmail.com"
 COPY . /app
 WORKDIR /app
 RUN npm install -r package.json
-#ENTRYPOINT ["python"]
+#ENTRYPOINT ["nodejs"]
 EXPOSE 5000
 CMD ["npm", "start"]
